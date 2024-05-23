@@ -1,0 +1,185 @@
+body {
+    background: #f9f9f9;
+    font: 14px "Verdana";
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 0px 0px 0px;
+    min-width: 960px;
+}
+
+body>header {
+    height: 100px;
+    width: 100%;
+    background: #4a182e;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+
+}
+
+header h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    padding-right: 700px;
+    margin-right: 100px;
+
+}
+
+article header {
+    height: 140px;
+}
+
+article {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 50px 50px 10px 50px;
+
+}
+
+article h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: max-content;
+    border-bottom: 4px solid #EF6534;
+    margin: 0;
+}
+
+.cistic {
+    clear: both;
+}
+
+article {
+
+    margin: 0 auto;
+}
+
+nav ul {
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul li {
+    padding: 0 15px;
+    margin: 0 5px;
+    font-size: 1em;
+    line-height: 4.3em;
+    text-decoration: none;
+}
+
+nav ul a {
+    color: white;
+    padding: 8px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav ul a:hover,
+.aktivni a {
+    border-bottom: 2px solid #EF6534;
+}
+
+table {
+    width: 100%;
+    border: none;
+    margin-top: 20px;
+}
+
+th,
+td {
+    width: 33.33%;
+    max-width: 33.33%;
+    text-align: left;
+    font-size: 20px;
+    border: none;
+}
+form{
+    margin-top: 50px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* Přidá mezeru mezi řádky */
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    /* Přidá mezeru mezi sloupci */
+}
+
+.flex-column label {
+    margin-bottom: 5px;
+    /* Nastaví vzdálenost mezi labely */
+}
+
+.flex-column input {
+    margin-bottom: 10px;
+    /* Nastaví vzdálenost mezi inputy */
+}
+
+#add {
+    margin: 20px auto;
+    /* Posunutí na střed vodorovně */
+    display: block;
+    /* Zajišťuje, že tlačítko zabere celý dostupný prostor */
+    border-radius: 10px;
+    /* Zaoblení rohů */
+
+    font-size: 16px;
+    font-size: 18px;
+    /* Nastavení velikosti písma */
+    background-color: #431d62;
+    /* Barva pozadí tlačítka */
+    color: white;
+    /* Barva textu na tlačítku */
+    border: none;
+    /* Odstranění okraje tlačítka */
+    cursor: pointer;
+    /* Změna kurzoru na ukazatel nad tlačítkem */
+}
+
+#add:hover {
+    background-color: #D0440B;
+    /* Barva pozadí tlačítka při najetí myší */
+}
+
+#add:hover {
+    background-color: #6a5c83;
+    /* Barva pozadí tlačítka při najetí myší */
+}
+
+ul li a {
+    text-decoration: none !important;
+    /* Odstranění podtržení */
+    color: white !important;
+}
+
+ul li a:hover {
+    color: white !important;
+}
+
+#save {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#add,
+#save {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+    text-align: center;
+
+}
