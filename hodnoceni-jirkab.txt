@@ -1,0 +1,15 @@
+Ceníme práci na projektu! 🏆 Prohlédli jsme si kód a máme k němu následující poznámky:
+
+1. Pojmenování identifikátorů - Zaznam je příliš obecný název i pro takto malý projekt, raději Pojistenec či něco podobného. U metod by se hodilo více konzistence, různé přístupy se střetávají i ve stejné třídě, kde jednou je smazFormular, ale smazatZaznam (namísto smazZaznam). ulozZaznamy, ale editovatZaznam?!
+2. Dodržení principů SRP a SoC - SRP = Single Responsibility Principle, tedy princip jedné odpovědnosti. To lze porušit dvěma směry. Buď (a častěji) tak, že jedna třída má více odpovědností, např. že nejenom spravuje databázovou tabulku, ale také vypisuje data do konzole. Výsledkem pak je, že takovou třídu není možné použít v jiném kontextu, např. pokud bychom měli okenní nebo webovou aplikaci.
+Druhý způsob je méně zřejmý - když jednu odpovědnost, např. interakci s uživatelem/konzolí, sdílí více tříd. Důsledkem je pak slepenec více tříd, kde není jasné, co která třída vlastně zajišťuje, není zřejmé, v které třídě nějakou metodu najdeme nebo proč by měla být zrovna v té a nikoli jiné.
+V tomto případě se zdá, že třída Pojistovna má více odpovědností, nejen správu záznamů, ale i řízení formuláře či výpis do HTML tabulky, nejspíš by bylo vhodnější ji rozdělit na dvě dle jednotlivých funkčností.
+3. Vhodný výběr datových typů - N/A (JS)
+4. Formátování kódu - vesměs ok
+5. Duplicitní kód a nekonečné cykly - zdá se, že např. přidávání tlačítek pro mazání a editaci by šlo spojit do jedné metody a odstranit duplicitu, podobně s obsluhou událostí kliknutí na tlačítka Ulož a Ulož změny.
+6. Validace vstupních dat - velmi základní, např. korektnost věku (číslo, resp. dokonce nezáporné číslo) třeba ověřována není.
+7. Logičnost a složitost - ok
+8. Komentáře - nějaké jsou
+9. Celkové hodnocení - jednoduchá webová/prohlížečová aplikace s ukládáním dat do localStorage. Slušelo by jí odstranění duplicit a větší přemýšlení nad pojmenováním identifikátorů.
+
+Doporučujeme případné výtky v kódu opravit, abyste jej mohli pak prezentovat budoucímu zaměstnavateli v co nejlepší kvalitě. Pokud byste potřebovali s čímkoli pomoci, naplánujte si s námi konzultaci, rádi vám poradíme!
